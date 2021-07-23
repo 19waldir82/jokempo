@@ -14,4 +14,4 @@ class Topo extends Component{
     }
 }
 
-export default Topo;
+export default Topo

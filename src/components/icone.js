@@ -40,7 +40,7 @@ class Icone extends Component{
 }
 
 const styles = StyleSheet.create({
-    
+
     ico:{
         alignItems: 'center',
         marginBottom: 20
@@ -53,4 +53,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Icone;
+export default Icone

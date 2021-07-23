@@ -3,7 +3,6 @@ import {
     View,
     Text,
     Button,
-    Image,
     StyleSheet
 } from 'react-native';
 
@@ -139,4 +138,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default App;
+export default App
