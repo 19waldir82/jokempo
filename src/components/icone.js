@@ -6,12 +6,16 @@ import {
     StyleSheet
 } from 'react-native'
 
+const imgPedra = require('../imgs/pedra.png')
+const imgPapel = require('../imgs/papel.png')
+const imgTesoura = require('../imgs/tesoura.png')
+
 class Icone extends Component {
     render () {
         if (this.props.escolha === 'pedra') {
             return (
                 <View style={styles.ico}>
-                    <Image source={require('../imgs/pedra.png')} />
+                    <Image source={imgPedra} />
                     <Text style={styles.txtJog}>{this.props.jogador}</Text>
                 </View>
             )
@@ -20,7 +24,7 @@ class Icone extends Component {
         if (this.props.escolha === 'papel') {
             return (
                 <View style={styles.ico}>
-                    <Image source={require('../imgs/papel.png')} />
+                    <Image source={imgPapel} />
                     <Text style={styles.txtJog}>{this.props.jogador}</Text>
                 </View>
             )
@@ -29,7 +33,7 @@ class Icone extends Component {
         if (this.props.escolha === 'tesoura') {
             return (
                 <View style={styles.ico}>
-                    <Image source={require('../imgs/tesoura.png')} />
+                    <Image source={imgTesoura} />
                     <Text style={styles.txtJog}>{this.props.jogador}</Text>
                 </View>
             )

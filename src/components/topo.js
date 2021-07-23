@@ -5,11 +5,13 @@ import {
     StyleSheet
 } from 'react-native'
 
+const imgTopo = require('../imgs/jokenpo.png')
+
 class Topo extends Component {
     render () {
         return (
             <View style={styles.alinhamento}>
-                <Image source={require('../imgs/jokenpo.png')} />
+                <Image source={(imgTopo)} />
             </View>
         )
     }
