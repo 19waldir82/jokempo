@@ -7,6 +7,9 @@ import {
     StyleSheet
 } from 'react-native';
 
+import Topo from './src/components/topo'
+import Icone from './src/components/icone'
+
 class App extends Component{
 
     constructor(props){
@@ -111,49 +114,6 @@ class App extends Component{
     }
 }
 
-class Topo extends Component{
-    render(){
-        return(
-            <View>
-                <Image source={require('./imgs/jokenpo.png')} />
-            </View>
-        )
-    }
-}
-
-class Icone extends Component{
-    render(){
-        if(this.props.escolha === 'pedra'){
-            return(
-                <View style={styles.ico}>
-                    <Image source={require('./imgs/pedra.png')} />
-                    <Text style={styles.txtJog}>{this.props.jogador}</Text>
-                </View>
-            )
-        }
-
-        if(this.props.escolha === 'papel'){
-            return(
-                <View style={styles.ico}>
-                    <Image source={require('./imgs/papel.png')} />
-                    <Text style={styles.txtJog}>{this.props.jogador}</Text>
-                </View>
-            )
-        }
-
-        if(this.props.escolha === 'tesoura'){
-            return(
-                <View style={styles.ico}>
-                    <Image source={require('./imgs/tesoura.png')} />
-                    <Text style={styles.txtJog}>{this.props.jogador}</Text>
-                </View>
-            )
-        } else {
-            return false
-        }
-    }
-}
-
 const styles = StyleSheet.create({
     btn:{
         width: 90
@@ -176,17 +136,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'blue',
         height: 60
-    },
-
-    ico:{
-        alignItems: 'center',
-        marginBottom: 20
-    },
-
-    txtJog:{
-        fontSize: 20,
-        fontWeight: 'bold',
-        color: 'green'
     }
 })
 
