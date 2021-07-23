@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
     View,
     Text,
     Image,
     StyleSheet
-} from 'react-native';
+} from 'react-native'
 
-class Icone extends Component{
-    render(){
-        if(this.props.escolha === 'pedra'){
-            return(
+class Icone extends Component {
+    render () {
+        if (this.props.escolha === 'pedra') {
+            return (
                 <View style={styles.ico}>
                     <Image source={require('../imgs/pedra.png')} />
                     <Text style={styles.txtJog}>{this.props.jogador}</Text>
@@ -17,8 +17,8 @@ class Icone extends Component{
             )
         }
 
-        if(this.props.escolha === 'papel'){
-            return(
+        if (this.props.escolha === 'papel') {
+            return (
                 <View style={styles.ico}>
                     <Image source={require('../imgs/papel.png')} />
                     <Text style={styles.txtJog}>{this.props.jogador}</Text>
@@ -26,8 +26,8 @@ class Icone extends Component{
             )
         }
 
-        if(this.props.escolha === 'tesoura'){
-            return(
+        if (this.props.escolha === 'tesoura') {
+            return (
                 <View style={styles.ico}>
                     <Image source={require('../imgs/tesoura.png')} />
                     <Text style={styles.txtJog}>{this.props.jogador}</Text>
@@ -39,7 +39,7 @@ class Icone extends Component{
     }
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create ({
 
     ico:{
         alignItems: 'center',

@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
     View,
     Image,
     StyleSheet
-} from 'react-native';
+} from 'react-native'
 
-class Topo extends Component{
-    render(){
-        return(
+class Topo extends Component {
+    render () {
+        return (
             <View style={styles.alinhamento}>
                 <Image source={require('../imgs/jokenpo.png')} />
             </View>
@@ -15,7 +15,8 @@ class Topo extends Component{
     }
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create ({
+    
     alinhamento: {
         alignItems: 'center',
         paddingTop: 10
